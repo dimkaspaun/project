@@ -16,7 +16,8 @@
 
 Схема стенда
 
-![Image 1](docs/stand.jpg)
+
+![проект](https://github.com/dimkaspaun/project/assets/156161074/456e95fd-c8c3-4159-aeca-ab33bfca162f)
 
 
 ### Состав проекта
