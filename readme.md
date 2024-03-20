@@ -45,10 +45,8 @@ MySQL (MASTER) | 192.168.10.30
 MySQL (SLAVE) | 192.168.10.35
 LogServer (ELK) | 192.168.10.40
 Monitoring (Zabbix) | 192.168.10.50
-Data (iSCSI)`*` | 192.168.10.100
+Data (iSCSI) | 192.168.10.100
 Backup (NFS Server) | 192.168.10.90
-
-`*` хост с развернутым iSCSI Target не претендует на продакш решение, а исключительно имитирует дисковое хранилище собранное на LVM Mirror. 
 
 
 Для разворачивания стенда выполняем `vagrant up`. Для разворачивания хостов подготовлен Ansible playbook. В playbook ипортируются роли, каждая роль разворачивает определенную службу (11 ролей).
@@ -72,12 +70,6 @@ Backup | backup
 
 Сервис | Адрес
 ------| ---------
-Wordpress (Nginx+PHP-FPM) | https://192.168.10.20 (https://airmeno.ru)
+Wordpress (Nginx+PHP-FPM) | https://192.168.10.20 (https://dimkaspaun.ru)
 ELK | http://192.168.10.40:5601
 Zabbix | http://192.168.10.50/zabbix
-
-
-SSL сертификат для сайта - https://zerossl.com
-
-https://www.sslforfree.com
-https://letsencrypt.org/
